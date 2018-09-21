@@ -1,0 +1,232 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="800.0" prefWidth="1280.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Mancala.GameController">
+   <children>
+      <AnchorPane layoutX="10.0" layoutY="10.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="800.0" prefWidth="1280.0">
+         <children>
+            <HBox layoutX="166.0" layoutY="139.0" prefHeight="92.0" prefWidth="909.0" spacing="10.0">
+               <children>
+                  <Button fx:id="p2house7" layoutX="10.0" layoutY="10.0" mnemonicParsing="false" onAction="#p2house7Move" text="Move">
+                     <font>
+                        <Font size="31.0" />
+                     </font>
+                  </Button>
+                  <Button fx:id="p2house6" layoutX="10.0" layoutY="10.0" mnemonicParsing="false" onAction="#p2house6Move" text="Move">
+                     <font>
+                        <Font size="31.0" />
+                     </font>
+                  </Button>
+                  <Button fx:id="p2house5" layoutX="205.0" layoutY="10.0" mnemonicParsing="false" onAction="#p2house5Move" text="Move">
+                     <font>
+                        <Font size="31.0" />
+                     </font>
+                  </Button>
+                  <Button fx:id="p2house4" layoutX="205.0" layoutY="10.0" mnemonicParsing="false" onAction="#p2house4Move" text="Move">
+                     <font>
+                        <Font size="31.0" />
+                     </font>
+                  </Button>
+                  <Button fx:id="p2house3" layoutX="205.0" layoutY="10.0" mnemonicParsing="false" onAction="#p2house3Move" text="Move">
+                     <font>
+                        <Font size="31.0" />
+                     </font>
+                  </Button>
+                  <Button fx:id="p2house2" layoutX="10.0" layoutY="10.0" mnemonicParsing="false" onAction="#p2house2Move" text="Move">
+                     <font>
+                        <Font size="31.0" />
+                     </font>
+                  </Button>
+                  <Button fx:id="p2house1" layoutX="660.0" layoutY="10.0" mnemonicParsing="false" onAction="#p2house1Move" text="Move">
+                     <font>
+                        <Font size="31.0" />
+                     </font>
+                  </Button>
+               </children>
+            </HBox>
+            <HBox layoutX="167.0" layoutY="215.0" prefHeight="94.0" prefWidth="895.0" spacing="10.0">
+               <children>
+                  <TextField fx:id="p2text7">
+                     <font>
+                        <Font size="48.0" />
+                     </font></TextField>
+                  <TextField fx:id="p2text6" layoutX="10.0" layoutY="10.0">
+                     <font>
+                        <Font size="48.0" />
+                     </font></TextField>
+                  <TextField fx:id="p2text5" layoutX="10.0" layoutY="10.0">
+                     <font>
+                        <Font size="48.0" />
+                     </font></TextField>
+                  <TextField fx:id="p2text4" layoutX="10.0" layoutY="10.0">
+                     <font>
+                        <Font size="48.0" />
+                     </font></TextField>
+                  <TextField fx:id="p2text3" layoutX="236.0" layoutY="10.0">
+                     <font>
+                        <Font size="48.0" />
+                     </font></TextField>
+                  <TextField fx:id="p2text2" layoutX="191.0" layoutY="10.0">
+                     <font>
+                        <Font size="48.0" />
+                     </font></TextField>
+                  <TextField fx:id="p2text1" layoutX="161.0" layoutY="10.0">
+                     <font>
+                        <Font size="48.0" />
+                     </font></TextField>
+               </children>
+            </HBox>
+            <HBox layoutX="162.0" layoutY="321.0" prefHeight="126.0" prefWidth="732.0" spacing="10.0">
+               <children>
+                  <Circle fill="#ff1f1f" radius="61.0" stroke="BLACK" strokeType="INSIDE" />
+                  <Circle fill="#ff1f1f" layoutX="71.0" layoutY="71.0" radius="61.0" stroke="BLACK" strokeType="INSIDE" />
+                  <Circle fill="#ff1f1f" layoutX="193.0" layoutY="71.0" radius="61.0" stroke="BLACK" strokeType="INSIDE" />
+                  <Circle fill="#ff1f1f" layoutX="315.0" layoutY="71.0" radius="61.0" stroke="BLACK" strokeType="INSIDE" />
+                  <Circle fill="#ff1f1f" layoutX="437.0" layoutY="71.0" radius="61.0" stroke="BLACK" strokeType="INSIDE" />
+                  <Circle fill="#ff1f1f" layoutX="559.0" layoutY="71.0" radius="61.0" stroke="BLACK" strokeType="INSIDE" />
+                  <Circle fill="#ff1f1f" layoutX="71.0" layoutY="71.0" radius="61.0" stroke="BLACK" strokeType="INSIDE" />
+               </children>
+            </HBox>
+            <Label layoutX="3.0" layoutY="-7.0" prefHeight="98.0" prefWidth="243.0" text="Player 2">
+               <font>
+                  <Font name="Arial Rounded MT Bold" size="59.0" />
+               </font>
+            </Label>
+            <Label layoutX="1035.0" layoutY="-8.0" prefHeight="98.0" prefWidth="243.0" text="Player 1">
+               <font>
+                  <Font name="Arial Rounded MT Bold" size="59.0" />
+               </font>
+            </Label>
+            <HBox layoutX="162.0" layoutY="462.0" prefHeight="92.0" prefWidth="906.0" spacing="10.0">
+               <children>
+                  <Button fx:id="p1house1" layoutX="10.0" layoutY="10.0" mnemonicParsing="false" onAction="#p1house1Move" text="Move">
+                     <font>
+                        <Font size="31.0" />
+                     </font>
+                  </Button>
+                  <Button fx:id="p1house2" layoutX="10.0" layoutY="10.0" mnemonicParsing="false" onAction="#p1house2Move" text="Move">
+                     <font>
+                        <Font size="31.0" />
+                     </font>
+                  </Button>
+                  <Button fx:id="p1house3" layoutX="205.0" layoutY="10.0" mnemonicParsing="false" onAction="#p1house3Move" text="Move">
+                     <font>
+                        <Font size="31.0" />
+                     </font>
+                  </Button>
+                  <Button fx:id="p1house4" layoutX="205.0" layoutY="10.0" mnemonicParsing="false" onAction="#p1house4Move" text="Move">
+                     <font>
+                        <Font size="31.0" />
+                     </font>
+                  </Button>
+                  <Button fx:id="p1house5" layoutX="205.0" layoutY="10.0" mnemonicParsing="false" onAction="#p1house5Move" text="Move">
+                     <font>
+                        <Font size="31.0" />
+                     </font>
+                  </Button>
+                  <Button fx:id="p1house6" layoutX="10.0" layoutY="10.0" mnemonicParsing="false" onAction="#p1house6Move" text="Move">
+                     <font>
+                        <Font size="31.0" />
+                     </font>
+                  </Button>
+                  <Button fx:id="p1house7" layoutX="10.0" layoutY="10.0" mnemonicParsing="false" onAction="#p1house7Move" text="Move">
+                     <font>
+                        <Font size="31.0" />
+                     </font>
+                  </Button>
+               </children>
+            </HBox>
+            <HBox layoutX="165.0" layoutY="656.0" prefHeight="126.0" prefWidth="1014.0" spacing="10.0">
+               <children>
+                  <Circle fill="#2e1ffc" radius="61.0" stroke="BLACK" strokeType="INSIDE" />
+                  <Circle fill="#2e1ffc" layoutX="71.0" layoutY="71.0" radius="61.0" stroke="BLACK" strokeType="INSIDE" />
+                  <Circle fill="#2e1ffc" layoutX="193.0" layoutY="71.0" radius="61.0" stroke="BLACK" strokeType="INSIDE" />
+                  <Circle fill="#2e1ffc" layoutX="315.0" layoutY="71.0" radius="61.0" stroke="BLACK" strokeType="INSIDE" />
+                  <Circle fill="#2e1ffc" layoutX="437.0" layoutY="71.0" radius="61.0" stroke="BLACK" strokeType="INSIDE" />
+                  <Circle fill="#2e1ffc" layoutX="559.0" layoutY="71.0" radius="61.0" stroke="BLACK" strokeType="INSIDE" />
+                  <Circle fill="#2e1ffc" layoutX="71.0" layoutY="71.0" radius="61.0" stroke="BLACK" strokeType="INSIDE" />
+               </children>
+            </HBox>
+            <Ellipse fill="#2e1ffc" layoutX="1179.0" layoutY="474.0" radiusX="73.0" radiusY="280.0" stroke="BLACK" strokeType="INSIDE" />
+            <Ellipse fill="#ff1f1f" layoutX="80.0" layoutY="475.0" radiusX="73.0" radiusY="280.0" stroke="BLACK" strokeType="INSIDE" />
+            <HBox layoutX="165.0" layoutY="547.0" prefHeight="94.0" prefWidth="895.0" spacing="10.0">
+               <children>
+                  <TextField fx:id="p1text1">
+                     <font>
+                        <Font size="48.0" />
+                     </font></TextField>
+                  <TextField fx:id="p1text2" layoutX="10.0" layoutY="10.0">
+                     <font>
+                        <Font size="48.0" />
+                     </font></TextField>
+                  <TextField fx:id="p1text3" layoutX="10.0" layoutY="10.0">
+                     <font>
+                        <Font size="48.0" />
+                     </font></TextField>
+                  <TextField fx:id="p1text4" layoutX="10.0" layoutY="10.0">
+                     <font>
+                        <Font size="48.0" />
+                     </font></TextField>
+                  <TextField fx:id="p1text5" layoutX="236.0" layoutY="10.0">
+                     <font>
+                        <Font size="48.0" />
+                     </font></TextField>
+                  <TextField fx:id="p1text6" layoutX="191.0" layoutY="10.0">
+                     <font>
+                        <Font size="48.0" />
+                     </font></TextField>
+                  <TextField fx:id="p1text7" layoutX="161.0" layoutY="10.0">
+                     <font>
+                        <Font size="48.0" />
+                     </font></TextField>
+               </children>
+            </HBox>
+            <TextField fx:id="p2score" layoutX="4.0" layoutY="81.0" prefHeight="67.0" prefWidth="144.0">
+               <font>
+                  <Font size="48.0" />
+               </font></TextField>
+            <TextField fx:id="p1score" layoutX="1091.0" layoutY="82.0" prefHeight="67.0" prefWidth="144.0">
+               <font>
+                  <Font size="48.0" />
+               </font></TextField>
+            <TextField fx:id="p2timer" layoutX="-6.0" layoutY="441.0" prefHeight="65.0" prefWidth="159.0">
+               <font>
+                  <Font size="36.0" />
+               </font>
+            </TextField>
+            <TextField fx:id="p2timerText" layoutX="16.0" layoutY="358.0" prefHeight="77.0" prefWidth="126.0" text="Time">
+               <font>
+                  <Font size="36.0" />
+               </font>
+            </TextField>
+            <TextField fx:id="p1timerText" layoutX="1112.0" layoutY="345.0" prefHeight="77.0" prefWidth="126.0" text="Time">
+               <font>
+                  <Font size="36.0" />
+               </font>
+            </TextField>
+            <TextField fx:id="p1timer" layoutX="1091.0" layoutY="433.0" prefHeight="65.0" prefWidth="159.0">
+               <font>
+                  <Font size="36.0" />
+               </font>
+            </TextField>
+         </children>
+      </AnchorPane>
+      <Button fx:id="pieRule" layoutX="739.0" layoutY="25.0" mnemonicParsing="false" onAction="#doPieRule" prefHeight="102.0" prefWidth="263.0" text="Pie Rule?">
+         <font>
+            <Font size="48.0" />
+         </font>
+      </Button>
+      <Label fx:id="titleText" layoutX="259.0" layoutY="12.0" prefHeight="125.0" prefWidth="435.0" text="Mancala">
+         <font>
+            <Font name="Arial Rounded MT Bold" size="72.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>
